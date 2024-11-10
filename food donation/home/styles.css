@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    background-color: #f7f9fc;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #5cb85c;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Button Styling */
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-donor {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+}
+
+.btn-donor:hover {
+    background-color: #4aa44d;
+}
+
+.btn-receiver {
+    background-color: #337ab7;
+    color: white;
+    border: none;
+}
+
+.btn-receiver:hover {
+    background-color: #286593;
+}
+
+.contact-section {
+    background-color: #333;
+}
+
+.contact-section h3 {
+    color: #5cb85c; /* Theme green color for headings */
+    font-weight: bold;
+}
+
+.contact-section p,
+.contact-section address,
+.contact-section .contact-info li {
+    color: #ddd; /* Light color for text */
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #5cb85c;
+    margin-right: 10px;
+}
+
+/* Footer Styling */
+.footer-section {
+    background-color: #222;
+    color: #aaa;
+}
+
+.footer-section p {
+    margin: 0;
+}
+/* FAQ Section */
+.faq-section {
+    background-color: #f7f9fc;
+    padding: 40px 0;
+}
+
+.faq-section h2 {
+    color: #5cb85c;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* FAQ Toggle Icon */
+.faq-question:after {
+    content: '▼';
+    float: right;
+    transition: transform 0.2s;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question:after {
+    transform: rotate(180deg);
+}
+.navbar {
+    background-color: #5cb85c; /* Green color for donation theme */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+
+.nav-link {
+    color: rgb(245, 242, 242);
+    font-size: 1.2rem; /* Adjust size as needed, e.g., 1.2rem */
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}

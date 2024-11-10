@@ -1,0 +1,164 @@
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+    background-color: #5cb85c; /* Green color for donation theme */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link {
+    color: rgb(245, 242, 242);
+    font-size: 1.2rem; /* Adjust size as needed, e.g., 1.2rem */
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+
+/* Slider Section */
+.slider-section .carousel-item img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* Donor List Section */
+.donor-list-section {
+    background-color: #333;
+}
+
+.donor-list-section h2 {
+    color: #5cb85c;
+}
+
+.card {
+    background-color: #444;
+    color: #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+/* Checkbox Styling */
+.collection-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.collection-checkbox input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.collection-checkbox label {
+    font-weight: 600;
+    color: #ddd;
+    cursor: pointer;
+}
+/* Navigate Button Styling */
+.donor-list-section .btn-primary {
+    background-color: #292e35;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.donor-list-section .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.donor-list-section .btn-primary:active {
+    background-color: #004494;
+    transform: scale(1);
+}
+
+/* Spacing adjustments for the button and checkbox */
+.donor-list-section .d-flex {
+    gap: 10px;
+}
+/* Distance badge styling */
+/* Distance badge styling */
+.distance-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
+
+
+/* Certificates Section */
+.certificates-section {
+    background-color: #f7f9fc;
+}
+
+.certificates-section h2 {
+    color: #5cb85c; /* Green color for donation theme */
+    font-weight: bold;
+}
+
+.certificate-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.certificate-card img {
+    border-radius: 8px;
+    max-height: 250px;
+}
+
+.certificate-card h5 {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.certificate-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #333;
+}
+
+.contact-section h3 {
+    color: #5cb85c;
+}
+
+.contact-info li {
+    color: #ddd;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #5cb85c;
+}
+
+/* Footer Styling */
+.footer-section {
+    background-color: #222;
+    color: #aaa;
+}
+
+.footer-section p {
+    margin: 0;
+}

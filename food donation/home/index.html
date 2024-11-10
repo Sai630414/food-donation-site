@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Platform</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <!-- Logo Image and Brand Name -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="logo.png" alt="Logo" class="logo-img mr-2"> <!-- Add your logo image file here -->
+            Food Bank
+        </a>
+
+        <!-- Toggler for collapsible navbar on smaller screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///D:/web%20pages/food%20donation/home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/drive/folders/1SE6KP96B-tP8TjadSKHQkrtIvCunNWwf?usp=sharing">Gallery Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <h1>Help us build a better tomorrow today</h1>
+    <p>Join us in our mission to reduce food waste and fight hunger.</p>
+    <div>
+        <a href="file:///D:/web%20pages/food%20donation/donar/index.html" class="btn btn-donor">Go to Donor Page</a>
+        <a href="file:///D:/web%20pages/food%20donation/login/index.html" class="btn btn-receiver">Go to Receiver Page</a>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <h4 class="faq-question">How can I donate food?</h4>
+            <p class="faq-answer">You can donate food by clicking on the "Donor" button and filling out the donation form with details about the food you wish to donate. We welcome donations of any size.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-question">Is there a minimum amount of food required to make a donation?</h4>
+            <p class="faq-answer">No, there is no minimum quantity required. Any amount of food you are willing to donate is appreciated and can make a difference.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-question">How do recipients collect the donated food?</h4>
+            <p class="faq-answer">Once you submit a donation, recipients can view it and arrange for pickup or delivery based on mutual convenience. Our system connects both parties directly.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-question">Is my donation eligible for tax benefits?</h4>
+            <p class="faq-answer">Donations to registered charities may be eligible for tax deductions. Please consult with a tax professional to understand eligibility and required documentation.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4 class="faq-question">Can I track the impact of my donation?</h4>
+            <p class="faq-answer">Yes, our platform provides an impact tracker, showing the number of people served by your donations. You can also view the total number of people helped by the community.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="contact-section py-5 text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>About Us</h3>
+                <p>We are a food donation platform committed to connecting restaurants and individuals with NGOs and charities to fight hunger. By working together, we aim to reduce food waste and make a positive impact on communities in need.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <p>Feel free to reach out for any queries or assistance.</p>
+                <ul class="contact-info list-unstyled">
+                    <li><i class="fas fa-phone-alt"></i> +916304142318</li>
+                    <li><i class="fas fa-envelope"></i> info@fooddonation.org</li>
+                    <li><i class="fas fa-globe"></i> www.fooddonation.org</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Our Address</h3>
+                <address>15/597 karimnagar ,telangana</address>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section py-3 text-center text-light">
+    <div class="container">
+        <p>&copy; 2024 Food Donation Platform. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Select all FAQ question elements
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach((question) => {
+        // Add click event listener to each question
+        question.addEventListener('click', () => {
+            // Toggle 'active' class for the parent FAQ item to show/hide the answer
+            const parent = question.parentElement;
+            parent.classList.toggle('active');
+
+            // Collapse other open FAQs if necessary
+            faqQuestions.forEach((item) => {
+                if (item !== question && item.parentElement.classList.contains('active')) {
+                    item.parentElement.classList.remove('active');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
